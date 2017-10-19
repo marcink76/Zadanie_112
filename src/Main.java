@@ -20,6 +20,7 @@ public class Main {
         do {
             do {
                 try {
+                    System.out.println("Podaj " + (count + 1) + " liczbę: ");
                     integerQueue.offer(scanner.nextInt());
                     scanner.nextLine();
                     count++;
@@ -39,6 +40,5 @@ public class Main {
         } while (integerQueue.size() > 0);
 
         System.out.println(stringBuilder.substring(0, stringBuilder.lastIndexOf("+")) + "= " + sum);
-
     }
 }
